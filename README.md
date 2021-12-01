@@ -61,3 +61,10 @@ Lấy mật khẩu admin tại đường dẫn
 
 _cat /var/lib/jenkins/secrets/initialAdminPassword_
 
+
+**Tạo tài khoản jenkins admin**
+
+* Nhập thông tin tài khoản
+* Chọn save and continute để tiếp tục
+* Save and Finish
+* Starting Jenkins
