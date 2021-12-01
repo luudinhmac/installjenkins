@@ -35,6 +35,29 @@ curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | 
 
 sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
 
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+
 **Cài đặt jenkins**
 
 sudo yum install jenkins -y
+
+**Khởi động jenkins**
+
+_sudo systemctl start jenkins _
+_sudo systemctl enable jenkins_
+_sudo systemctl status  jenkins_
+
+**_Mặc định Jenkin chạy port 8080_**
+
+**3. Thiết lập Jenkins**
+
+Truy cập đường dẫn http://10.10.10.20:8080
+
+Tại giao diện sẽ yêu cầu nhập khóa mật khẩu Admin
+
+Khóa bí mật admin chỉ có khi truy cập giao diện lần đầu
+
+Lấy mật khẩu admin tại đường dẫn 
+
+_cat /var/lib/jenkins/secrets/initialAdminPassword_
+
