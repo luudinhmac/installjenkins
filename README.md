@@ -27,3 +27,14 @@ systemctl restart chronyd.service
 chronyc sources
 
 timedatectl set-local-rtc 0
+
+
+Cài đặt repo jenkins
+
+curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
+
+sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+
+**Cài đặt jenkins**
+
+sudo yum install jenkins -y
