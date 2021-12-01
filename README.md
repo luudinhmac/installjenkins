@@ -14,7 +14,7 @@ systemctl stop firewalld
 
 systemctl disable firewalld
 
-__Cấu hình đồng bộ thời gian
+__Cấu hình đồng bộ thời gian__
 
 timedatectl set-timezone Asia/Ho_Chi_Minh
 
@@ -29,7 +29,7 @@ chronyc sources
 timedatectl set-local-rtc 0
 
 
-Cài đặt repo jenkins
+__Cài đặt repo jenkins__
 
 curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
 
