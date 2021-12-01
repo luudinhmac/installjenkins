@@ -75,3 +75,29 @@ Cài đặt plugin cho jenkins
 * Chọn save and continute để tiếp tục
 * Save and Finish
 * Starting Jenkins
+
+
+sudo vi /etc/nginx/conf.d/jenkins.conf
+
+``` server {
+    listen 80;
+
+    server_name example.com www.example.com;
+
+    auth_basic "Restricted Access";
+    auth_basic_user_file /etc/nginx/htpasswd.users;
+
+    location / {
+        proxy_pass http://localhost:5601;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+```
+
+_sudo nginx -t
+
+_systemctl restart nginx_
