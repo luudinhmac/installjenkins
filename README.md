@@ -1,4 +1,4 @@
-# Cài đặt gitlab trên centos 7
+# Cài đặt Jenkins trên centos 7
 # 1. Chuẩn bị môi trường
 ```
 yum install epel-release -y
