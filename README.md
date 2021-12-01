@@ -63,7 +63,7 @@ _cat /var/lib/jenkins/secrets/initialAdminPassword_
 
 
 ![Nhập mật khẩu](../../mkadmin.PNG)
-
+![](/mkadmin.PNG)
 
 **Tạo tài khoản jenkins admin**
 
