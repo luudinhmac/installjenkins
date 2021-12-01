@@ -32,9 +32,9 @@ sudo yum install jenkins -y
 ```
 **Khởi động jenkins**
 ```
-_sudo systemctl start jenkins _
-_sudo systemctl enable jenkins_
-_sudo systemctl status  jenkins_
+sudo systemctl start jenkins
+sudo systemctl enable jenkins
+sudo systemctl status  jenkins
 ```
 **_Mặc định Jenkin chạy port 8080_**
 
@@ -66,7 +66,8 @@ Cài đặt plugin cho jenkins
 
 sudo vi /etc/nginx/conf.d/jenkins.conf
 
-``` server {
+``` 
+server {
     listen 80;
 
     server_name example.com www.example.com;
@@ -85,6 +86,6 @@ sudo vi /etc/nginx/conf.d/jenkins.conf
 }
 ```
 ```
-_sudo nginx -t
-_systemctl restart nginx_
+sudo nginx -t 
+systemctl restart nginx
 ```
