@@ -26,7 +26,7 @@ curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | 
 sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 ```
-**Cài đặt jenkins**
+# 2. Cài đặt jenkins
 ```
 sudo yum install jenkins -y
 ```
@@ -73,7 +73,7 @@ server {
     server_name example.com www.example.com;
 
     auth_basic "Restricted Access";
-    auth_basic_user_file /etc/nginx/htpasswd.users;
+    #auth_basic_user_file /etc/nginx/htpasswd.users;
 
     location / {
         proxy_pass http://localhost:5601;
