@@ -1,7 +1,7 @@
-# installgitlab
-**Cài đặt gitlab trên centOS 7**
+# Cài đặt gitlab trên centos 7
 
 yum install epel-release -y
+
 yum update -y
 
 **Tắt firewall và SELinux**
