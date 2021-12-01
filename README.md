@@ -1,10 +1,10 @@
 # installgitlab
-Cài đặt gitlab trên centOS 7
+**Cài đặt gitlab trên centOS 7**
 
 yum install epel-release -y
 yum update -y
 
-Tắt firewall và SELinux
+**Tắt firewall và SELinux**
 
 sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/sysconfig/selinux
 
@@ -14,7 +14,7 @@ systemctl stop firewalld
 
 systemctl disable firewalld
 
-Cấu hình đồng bộ thời gian
+__Cấu hình đồng bộ thời gian
 
 timedatectl set-timezone Asia/Ho_Chi_Minh
 
