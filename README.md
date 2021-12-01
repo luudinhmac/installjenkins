@@ -62,9 +62,13 @@ Lấy mật khẩu admin tại đường dẫn
 _cat /var/lib/jenkins/secrets/initialAdminPassword_
 
 
-![Nhập mật khẩu](../../mkadmin.PNG)
+
 ![](/mkadmin.PNG)
 
+Cài đặt plugin cho jenkins
+
+![](/installplugin.PNG)
+![](/installplugin1.PNG)
 **Tạo tài khoản jenkins admin**
 
 * Nhập thông tin tài khoản
